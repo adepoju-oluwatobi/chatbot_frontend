@@ -1,4 +1,4 @@
-// src/App.tsx
+// src/App.ts
 import ChatWidget from './Widget';
 
 function App() {

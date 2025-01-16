@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: './src/main.tsx', // Your widget entry file
+      entry: './src/main.tsx',
       name: 'MyWidget',
-      fileName: (format) => `my-widget.${format}.js`, // Change extension to .js
+      fileName: (format) => `my-widget.${format}.js`,
     },
   },
 });

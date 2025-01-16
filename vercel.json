@@ -2,12 +2,12 @@
     "builds": [
       {
         "src": "dist/my-widget.umd.cjs",
-        "use": "@vercel/static"
+        "use": "@vercel/static"  
       }
     ],
     "routes": [
       {
-        "src": "dist/my-widget.umd.cjs",
+        "src": "/my-widget.umd.cjs",  
         "dest": "/dist/my-widget.umd.cjs"
       }
     ]

@@ -1,22 +1,22 @@
 {
     "builds": [
       {
-        "src": "dist/my-widget.umd.js",
+        "src": "dist/my-widget.umd.js",  
         "use": "@vercel/static"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
-        "src": "/my-widget.umd.js", 
-        "dest": "/dist/my-widget.umd.js" 
+        "source": "/my-widget.umd.js",  
+        "destination": "/dist/my-widget.umd.js"  
       }
     ],
     "headers": [
       {
-        "source": "/my-widget.umd.js",
+        "source": "/my-widget.umd.js", 
         "headers": [
           {
-            "key": "Content-Type",  
+            "key": "Content-Type",
             "value": "application/javascript"
           }
         ]

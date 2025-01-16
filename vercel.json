@@ -1,14 +1,14 @@
 {
     "builds": [
       {
-        "src": "dist/my-widget.umd.js",
+        "src": "dist/my-widget.umd.cjs",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
-        "src": "/my-widget.umd.js",
-        "dest": "/dist/my-widget.umd.js"
+        "src": "dist/my-widget.umd.cjs",
+        "dest": "/dist/my-widget.umd.cjs"
       }
     ]
   }

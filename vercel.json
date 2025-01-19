@@ -1,26 +1,9 @@
 {
-    "builds": [
-      {
-        "src": "dist/my-widget.umd.js",  
-        "use": "@vercel/static"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/my-widget.umd.js",  
-        "destination": "/dist/my-widget.umd.js"  
-      }
-    ],
-    "headers": [
-      {
-        "source": "/my-widget.umd.js", 
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/index.js",
+      "use": "@vercel/static-build"
+    }
+  ]
+}

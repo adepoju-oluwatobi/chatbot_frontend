@@ -14,7 +14,7 @@ const Chat = ({ messages, firstMessageSent }: ChatProps) => {
   return (
     <div className="max-w-md mx-auto flex flex-col h-[76vh] rounded relative">
       {/* Chat Messages */}
-      <div className="flex-grow overflow-y-auto p-4 space-y-4 pb-20 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100">
+      <div className="flex-grow p-4 space-y-4 pb-20 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100">
         <ul className="list-none p-0 m-0">
           {messages.map((message, index) => (
             <li

@@ -24,6 +24,7 @@ To embed the widget in a React app, use the following steps:
        <iframe
          src={iframeSrc}
          style={{
+           zIndex: '999',
            width: '100%',
            height: '100%',
            border: 'none',
@@ -69,6 +70,7 @@ To embed the widget in a plain HTML project, follow these steps:
      <iframe
        src="http://localhost:5174?assistant_id=asst_79azoCwz4RXE6luvA1xQdvLo"
        style="
+         z-index: 999;
          width: 100%;
          height: 100%;
          border: none;

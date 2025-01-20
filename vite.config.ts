@@ -3,11 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: './',
   build: {
-    lib: {
-      entry: './src/main.tsx',
-      name: 'MyWidget',
-      fileName: (format) => `my-widget.${format}.js`,
-    },
+    outDir: 'dist',
   },
 });
